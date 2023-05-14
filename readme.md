@@ -226,3 +226,39 @@ HEAD is now at dd26836 Set up home and about pages
 razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ ^C
 razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$
 ```
+
+## Bundle 2
+
+### Exercise 1
+
+```bash
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git add service.html
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git commit -m "Add Service Page"
+[ft/bundle-2 2e102f0] Add Service Page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 service.html
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$  git push --set-upstream origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 495 bytes | 495.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Derick1530/git-exercises/pull/new/ft/bundle-2
+remote:
+To github.com:Derick1530/git-exercises.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+Branch 'ft/bundle-2' set up to track remote branch 'ft/bundle-2' from 'origin'.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$
+```
