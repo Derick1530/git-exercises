@@ -260,7 +260,26 @@ remote:
 To github.com:Derick1530/git-exercises.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 Branch 'ft/bundle-2' set up to track remote branch 'ft/bundle-2' from 'origin'.
-razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git add .
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git commit -m "Change title"
+[main e710b1f] Change title
+ 2 files changed, 40 insertions(+), 1 deletion(-)
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 779 bytes | 779.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:Derick1530/git-exercises.git
+   5180825..e710b1f  main -> main
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
 ```
 
 ### Exercise 2
