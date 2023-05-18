@@ -262,3 +262,42 @@ To github.com:Derick1530/git-exercises.git
 Branch 'ft/bundle-2' set up to track remote branch 'ft/bundle-2' from 'origin'.
 razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$
 ```
+
+### Exercise 2
+
+```bash
+
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout main
+Switched to branch 'main'
+razac@Razac:~/Documents/GitHub/Ojemba/razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 628 bytes | 628.00 KiB/s, done.
+From github.com:Derick1530/git-exercises
+   b320937..5180825  main       -> origin/main
+Updating b320937..5180825
+Fast-forward
+ about.html   |  12 ++
+ home.html    |  12 ++
+ readme.md    | 259 +++++++++++++++++++++++++++++++++++++++++
+ service.html |  12 ++
+ 4 files changed, 295 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 service.html
+ razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git merge main
+Updating b320937..5180825
+Fast-forward
+ about.html   |  12 ++
+ home.html    |  12 ++
+ readme.md    | 259 +++++++++++++++++++++++++++++++++++++++++
+ service.html |  12 ++
+ 4 files changed, 295 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 service.html
+
+```
