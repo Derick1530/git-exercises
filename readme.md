@@ -470,3 +470,45 @@ razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git revert
 [ft/team-page d64f75e] Revert "Add a line"
  1 file changed, 1 deletion(-)
 ```
+
+### Exercise 2
+
+```bash
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git add .
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git commit -m "Change Title"
+[main 306ab25] Change Title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+giTo github.com:Derick1530/git-exercises.git
+   fb9dc76..306ab25  main -> main
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git add .
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git commit -m "Change title"
+[ft/home-page-redesign 1e04e46] Change title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$  git push --set-upstream origin ft/home-page-redesign
+```
