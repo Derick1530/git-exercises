@@ -260,5 +260,63 @@ remote:
 To github.com:Derick1530/git-exercises.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 Branch 'ft/bundle-2' set up to track remote branch 'ft/bundle-2' from 'origin'.
-razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git add .
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git commit -m "Change title"
+[main e710b1f] Change title
+ 2 files changed, 40 insertions(+), 1 deletion(-)
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 779 bytes | 779.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:Derick1530/git-exercises.git
+   5180825..e710b1f  main -> main
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+```
+
+### Exercise 2
+
+```bash
+
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout main
+Switched to branch 'main'
+razac@Razac:~/Documents/GitHub/Ojemba/razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 628 bytes | 628.00 KiB/s, done.
+From github.com:Derick1530/git-exercises
+   b320937..5180825  main       -> origin/main
+Updating b320937..5180825
+Fast-forward
+ about.html   |  12 ++
+ home.html    |  12 ++
+ readme.md    | 259 +++++++++++++++++++++++++++++++++++++++++
+ service.html |  12 ++
+ 4 files changed, 295 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 service.html
+ razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git merge main
+Updating b320937..5180825
+Fast-forward
+ about.html   |  12 ++
+ home.html    |  12 ++
+ readme.md    | 259 +++++++++++++++++++++++++++++++++++++++++
+ service.html |  12 ++
+ 4 files changed, 295 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 service.html
+
 ```
