@@ -318,24 +318,174 @@ Fast-forward
  create mode 100644 about.html
  create mode 100644 home.html
  create mode 100644 service.html
-razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git add service.html
-razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git commit -m "Resolved Conflict"
-[ft/service-redesign 94b74b5] Resolved Conflict
+
+
+```
+
+## Bundle 3
+
+### Exercise 1
+
+```bash
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout -b ft/team
+Switched to a new branch 'ft/team'
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git branch
+  dev
+  ft/bundle-2
+  ft/service-redesign
+* ft/team
+  main
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git add .
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git commit -m "Create team page"
+[ft/team-page 85477ca] Create team page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git push
-Enumerating objects: 7, done.
-Counting objects: 100% (7/7), done.
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git push --set-upstream origin ft/team-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
 Delta compression using up to 8 threads
 Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 603 bytes | 603.00 KiB/s, done.
+Writing objects: 100% (3/3), 303 bytes | 303.00 KiB/s, done.
 Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/Derick1530/git-exercises/pull/new/ft/team-page
+remote:
 To github.com:Derick1530/git-exercises.git
-   f5954db..94b74b5  ft/service-redesign -> ft/service-redesign
-razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git stash
-Saved working directory and index state WIP on service-redesign: 94b74b5 Resolved Conflict
-razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git stash list
-stash@{0}: WIP on service-redesign: 94b74b5 Resolved Conflict
-razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git stash pop
-On branch ft/service-redesign
-Your branch is up to date with 'origin/ft/service-redesign'.
+ * [new branch]      ft/team-page -> ft/team-page
+Branch 'ft/team-page' set up to track remote branch 'ft/team-page' from 'origin'.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git log
+commit 85477cae2367538c93c6645ecf60044945931ebe (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Derick1530 <DerickZIHALIRWA07@gmail.com>
+Date:   Thu May 18 06:34:25 2023 +0300
+
+    Create team page
+
+commit 555c7553d22de41491
+8588b98e910e28be43d552 (o
+rigin/ft/service-redesign
+, ft/service-redesign)
+Author: Derick1530 <Deric
+kZIHALIRWA07@gmail.com>
+Date:   Thu May 18 06:30:
+24 2023 +0300
+
+    Add terminal command
+
+commit 94b74b5e7014361f23
+aa637201e4b6682af66f50
+Merge: f5954db e710b1f
+Author: Derick1530 <Deric
+kZIHALIRWA07@gmail.com>
+Date:   Thu May 18 06:26:
+11 2023 +0300
+
+    Resolved Conflict
+
+commit e710b1f99e02f8f3e1
+1bc62b47937bf8802ae3b7 (o
+rigin/main, main, ft/team
+, ft/contact-page)
+Author: Derick1530 <Deric
+kZIHALIRWA07@gmail.com>
+Date:   Thu May 18 06:15:
+41 2023 +0300
+
+    Change title
+
+commit f5954dbe3e04172137
+6a16f45fd91486bec79bf1
+Author: Derick1530 <Deric
+kZIHALIRWA07@gmail.com>
+Date:   Thu May 18 06:13:
+46 2023 +0300
+
+    New commit
+
+commit 5180825391a87d5281
+c9404a8fcdb42089d0a434
+Merge: b320937 a454a4d
+Author: Derick1530 <Deric
+kZIHALIRWA07@gmail.com>
+Date:   Thu May 18 06:08:
+37 2023 +0300
+
+    Merge pull request #2
+ from Derick1530/ft/bundl
+e-2
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout ft/team
+ft/team
+ft/team-page
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout ft/team-page
+Already on 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git add .
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git commit -m "Add a line"
+[ft/team-page 876b3e4] Add a line
+ 1 file changed, 1 insertion(+)
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git push
+Enumerating objects: 5, done.
+Counting objects:  20% (1Counting objects:  40% (2Counting objects:  60% (3Counting objects:  80% (4Counting objects: 100% (5Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects:  33%Compressing objects:  66%Compressing objects: 100%Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/Writing objects:  66% (2/Writing objects: 100% (3/Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:remote: Resolving deltas:remote: Resolving deltas:remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:Derick1530/git-exercises.git
+   85477ca..876b3e4  ft/team-page -> ft/team-page
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git add .
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git commit -m "Add Faq Page"
+[ft/faq-page 1e8e17c] Add Faq Page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 faq.html
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git pus
+git: 'pus' is not a git command. See 'git --help'.
+
+The most similar commands are
+        push
+        pull
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git push --set-upstream origin ft/faq-pagects: 4, done.
+Counting objects:  25% (1Counting objects:  50% (2Counting objects:  75% (3Counting objects: 100% (4Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects:  33%Compressing objects:  66%Compressing objects: 100%Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/Writing objects:  66% (2/Writing objects: 100% (3/Writing objects: 100% (3/3), 494 bytes | 494.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:remote: Resolving deltas:remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Derick1530/git-exercises/pull/new/ft/faq-page
+remote:
+To github.com:Derick1530/git-exercises.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+Branch 'ft/faq-page' set up to track remote branch 'ft/faq-page' from 'origin'.
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git revert 876b3e4f686b52ad9addbfb51047e3b73900ded8
+[ft/team-page d64f75e] Revert "Add a line"
+ 1 file changed, 1 deletion(-)
 ```
