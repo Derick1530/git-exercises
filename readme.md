@@ -318,5 +318,24 @@ Fast-forward
  create mode 100644 about.html
  create mode 100644 home.html
  create mode 100644 service.html
-
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git add service.html
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git commit -m "Resolved Conflict"
+[ft/service-redesign 94b74b5] Resolved Conflict
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 603 bytes | 603.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:Derick1530/git-exercises.git
+   f5954db..94b74b5  ft/service-redesign -> ft/service-redesign
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git stash
+Saved working directory and index state WIP on service-redesign: 94b74b5 Resolved Conflict
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git stash list
+stash@{0}: WIP on service-redesign: 94b74b5 Resolved Conflict
+razac@Razac:~/Documents/GitHub/Ojemba/ojemba-project/github-exercice$ git stash pop
+On branch ft/service-redesign
+Your branch is up to date with 'origin/ft/service-redesign'.
 ```
